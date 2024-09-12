@@ -33,8 +33,8 @@ Host: localhost:3002
 
 // The corresponding HTTP response.
 /*
-HTTP/1.1 403 Forbidden
-Server: nginx/1.16.0
+HTTP/1.1 403 Forbidden                          # The response line.
+Server: nginx/1.16.0                            # Header/value pairs, separated by colons.
 Date: Tue, 29 Oct 2019 15:29:31 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 33
@@ -42,5 +42,5 @@ Connection: keep-alive
 Cache-Control: no-cache
 Vary: accept-encoding
 
-{"error":"must_be_authenticated"}
+{"error":"must_be_authenticated"}               # 2 new lines then the response body (also optional).
  */
