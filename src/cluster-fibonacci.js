@@ -20,6 +20,7 @@ function fibonacci(limit) {
     swap = prev;
     prev = prev + next;
     next = swap;
+    limit--;
   }
   return next;
 }
